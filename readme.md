@@ -22,14 +22,14 @@ node app.js
 5. Access the web page from http://localhost:3000
 
 # Screenshots
-![Homepage]()
-![search]()
+![Homepage](https://raw.githubusercontent.com/alella/music_store/master/screenshots/scrotIt0MR.png)
+![search](https://raw.githubusercontent.com/alella/music_store/master/screenshots/scrotV3Urf.png)
 
 # Accounts
-**Admin**
-username: `admin`
+**Admin**  
+username: `admin`  
 password: `admin1234`
 
-**test user**
-username: `user`
+**test user**  
+username: `user`  
 password: `user1234`
