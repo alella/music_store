@@ -11,9 +11,19 @@ from pprint import pprint
 import hashlib
 from time import sleep
 
+uname = raw_input("Enter mysql username: ")
+pwd = raw_input("Enter mysql password: ")
 db = MySQLdb.connect(host="localhost",  
-                     user="root",  
-                     passwd="root",
+                     user=uname,  
+                     passwd=pwd)
+cur = db.cursor()
+cur.execute("drop database if exists musicstore")
+cur.execute("create database musicstore")
+db.commit()
+
+db = MySQLdb.connect(host="localhost",  
+                     user=uname,  
+                     passwd=pwd,
                      db="musicstore")
 cur = db.cursor()
 
@@ -23,9 +33,9 @@ cur.execute("drop table if exists mood")
 cur.execute("drop table if exists track")
 cur.execute("drop table if exists album")
 cur.execute("drop table if exists purchase")
-cur.execute("drop table if exists user")
 cur.execute("drop table if exists cart")
-
+cur.execute("drop table if exists user")
+db.commit()
 # Create tables
 #---------------
 

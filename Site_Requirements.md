@@ -2,7 +2,7 @@ Website Requirements
 =====================
 
 - **User signup**: Register a new user to the system.
- - Check the new username or email address if it’s already registered to the system using AJAX.
+  - Check the new username or email address if it’s already registered to the system using AJAX.
   - Form validation: Check if all mandatory fields are filled out. (JQuery)
   - Check if password is strong enough. Define the rules of having a strong password. (JQuery). User passwords should be hashed and hashed version of passwords should be stored in the database.
 - User login
